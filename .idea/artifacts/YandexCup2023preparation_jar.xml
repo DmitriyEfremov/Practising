@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="YandexCup2023preparation:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/YandexCup2023preparation_jar</output-path>
+    <root id="archive" name="YandexCup2023preparation.jar">
+      <element id="module-output" name="YandexCup2023preparation" />
+    </root>
+  </artifact>
+</component>
