@@ -2,7 +2,6 @@ package Education_practice.Algorithms;
 
 import Education_practice.DataStructures.StackBasedWithArray;
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class PairsOfBrackets {

@@ -1,7 +1,6 @@
 package Education_practice.DataStructures;
 
 import java.util.Arrays;
-import java.math.*;
 //Очередь с циклическим переносом
 public class QueueBasedWithArray {
     protected int startPivot=0;

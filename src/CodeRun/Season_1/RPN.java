@@ -21,16 +21,12 @@ public class RPN {
         System.out.println(nums.pop());
     }
     static int proceed(String op,int a,int b){
-        switch(op){
-            case "+":
-                return a+b;
-            case "-":
-                return b-a;
-            case "*":
-                return a*b;
-            default:
-                return 0;
-        }
+        return switch (op) {
+            case "+" -> a + b;
+            case "-" -> b - a;
+            case "*" -> a * b;
+            default -> 0;
+        };
     }
 
 }

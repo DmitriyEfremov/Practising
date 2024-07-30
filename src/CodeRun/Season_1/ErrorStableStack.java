@@ -8,7 +8,7 @@ import java.util.Stack;
 
 public class ErrorStableStack {
     public static void main(String[] args) throws IOException {
-        Stack<Integer> stack = new Stack();
+        Stack<Integer> stack = new Stack<>();
         Scanner scanner = new Scanner(System.in);
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
         LOOP:while(true){

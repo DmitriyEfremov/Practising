@@ -5,7 +5,7 @@ import java.io.*;
 
 public class TicTacToe {
     static String[][] map;
-    static String inp[];
+    static String[] inp;
     static int len;
     static int width;
     public static void main(String[] args) throws IOException {

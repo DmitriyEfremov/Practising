@@ -1,7 +1,6 @@
 package CodeRun.Season_1;
 
 import java.io.*;
-import java.util.Arrays;
 // Задача с CodeRun
 public class Unique_elements {
     public static void main(String[] args) {
