@@ -5,11 +5,10 @@ import java.util.HashMap;
 
 public class PairOfLetters {
     //Скорее всего можно сделать эффективнее
-    private static HashMap<String, Integer> frequency = new HashMap();
+    private static HashMap<String, Integer> frequency = new HashMap<>();
     private static StringBuilder builder;
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
 
         String[] input = reader.readLine().split(" ");
         for(String word:input) {
@@ -37,6 +36,7 @@ public class PairOfLetters {
             }
         }
         System.out.println(res);
+        reader.close();
     }
     // метод для добавления элемента в словарь frequency и дальнейшая обработка буфера builder
     static void add(char ch){

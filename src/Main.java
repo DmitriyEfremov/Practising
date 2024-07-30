@@ -7,7 +7,7 @@ import JeffEriksonAlgorithms.LatticeMultiplying;
 public class Main {
     public static void main(String[] args){
 
-        BasicArray array = new BasicArray(1,2,3,4,5,6);
+//        BasicArray array = new BasicArray(1,2,3,4,5,6);
 //        String copy= array.toString();
 //        System.out.println(copy);
 //        array.append(1234);
@@ -27,7 +27,7 @@ public class Main {
         stack.put('a');
         stack.put('a');
         stack.put('a');
-        System.out.println(stack.toString());
+        System.out.println(stack);
 //        OddEvenSort sort= new OddEvenSort();
 //        System.out.println(Arrays.toString(sort.sort(data)));
 

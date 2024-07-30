@@ -1,18 +1,16 @@
 package CodeRun.Season_1;
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 
 
 public class Task_Sales {
-    public static void main(String[] args) {
-        HashMap<String,HashMap> people = new HashMap<>();
+    public static void main(String[] args) throws IOException {
+        HashMap<String,HashMap<String,Integer>> people = new HashMap<>();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String inp="";
+        String inp;
         ArrayList<String> names= new ArrayList<>();
         ArrayList<String> objects = new ArrayList<>();
-    try{
             while(!((inp=br.readLine()).isEmpty())){
 
                 String[] data= inp.split(" ");
@@ -46,7 +44,6 @@ public class Task_Sales {
                     }
                 }
             }
-        }catch(IOException io){}
         System.out.println(people);
     }
 }

@@ -8,7 +8,7 @@ import java.util.Stack;
 
 public class BracketsSequence {
     public static void main(String[] args) throws IOException {
-        Stack<Character> brackets = new Stack();
+        Stack<Character> brackets = new Stack<>();
         HashMap<Character,Character> ch = new HashMap<>();
         ch.put('(',')');
         ch.put('{','}');
