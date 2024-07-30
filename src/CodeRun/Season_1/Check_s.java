@@ -14,23 +14,16 @@ public class Check_s {
         pos=process[0].length();
         len=pos;
         for(int i=1;i<process.length;i++){
-            switch (process[i]){
-                case "delete":
-                    delete();
-                    break;
-                case "bspace":
-                    bspace();
-                    break;
-                case "left":
-                    left();
-                    break;
-                case "right":
-                    right();
-                    break;
-                default:
+            switch (process[i]) {
+                case "delete" -> delete();
+                case "bspace" -> bspace();
+                case "left" -> left();
+                case "right" -> right();
+                default -> {
                     inp.insert(pos, process[i]);
-                    len+=process[i].length();
-                    pos+=process[i].length();
+                    len += process[i].length();
+                    pos += process[i].length();
+                }
             }
         }
         if(toCheck.compareTo(inp) == 0) System.out.println("Yes");

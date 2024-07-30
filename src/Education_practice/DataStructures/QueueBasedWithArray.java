@@ -18,9 +18,7 @@ public class QueueBasedWithArray {
     public QueueBasedWithArray(int ... inputData){
         capacity=inputData.length*2;
         data=new int[capacity+1];
-        for(int i=0;i<inputData.length;i++){
-            data[i]=inputData[i];
-        }
+        data=Arrays.copyOf(inputData,inputData.length);
         endPivot=inputData.length-1;
     }
     public void push(int value){
