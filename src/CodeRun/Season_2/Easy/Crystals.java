@@ -2,7 +2,6 @@ package CodeRun.Season_2.Easy;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -71,7 +70,8 @@ public class Crystals {
 
         }
         System.out.println(builder);
-
+reader.close();
+writer.close();
 
     }
 

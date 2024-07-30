@@ -8,7 +8,6 @@ public class NearestBusStop {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        String[] inp = br.readLine().split(" ");
         stops = br.readLine().split(" ");
 
         String[] bus_pos = br.readLine().split(" ");

@@ -10,7 +10,6 @@ public class Tiles {
         String[] inp = reader.readLine().split(" ");
         int black = Integer.parseInt(inp[0]);
         int white = Integer.parseInt(inp[1]);
-        int square = black+white;
 
         for(int i=1;i<=white/2+1;i++){
             if(white%i==0 && (white/i+i)*2+4==black){
