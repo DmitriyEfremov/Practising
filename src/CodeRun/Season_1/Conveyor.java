@@ -1,11 +1,6 @@
 package CodeRun.Season_1;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -14,7 +9,6 @@ public class Conveyor {
 
     public static void main(String[] args) throws IOException {
         Stack<Double> stack = new Stack<>();
-        int a=1;
         Scanner scn = new Scanner(System.in);
 
         int tests = scn.nextInt();

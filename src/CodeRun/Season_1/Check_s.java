@@ -1,6 +1,5 @@
 package CodeRun.Season_1;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Check_s {

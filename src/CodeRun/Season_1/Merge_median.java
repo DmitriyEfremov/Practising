@@ -1,14 +1,13 @@
 package CodeRun.Season_1;
 
 import java.io.*;
-import java.util.Arrays;
 
 public class Merge_median {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException{
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
         String[][] data={};
         int amount=0,len=0;
-        try{
+
             String[] inp= r.readLine().split(" ");
             amount = Integer.parseUnsignedInt(inp[0]);
             len= Integer.parseUnsignedInt(inp[1]);
@@ -16,10 +15,7 @@ public class Merge_median {
             for(int i=0;i<amount;i++){
                 data[i]=r.readLine().split(" ");
             }
-        }
-        catch(IOException e){
 
-        }
         for(int i=0;i<amount-1;i++){
             for(int j=i+1;j<amount;j++){
                 int[] res=new int[len*2];

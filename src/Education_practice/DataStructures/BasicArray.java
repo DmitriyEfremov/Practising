@@ -1,12 +1,10 @@
 package Education_practice.DataStructures;
 
-import javax.swing.*;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class BasicArray {
     private int[] data;
-    int capacity=0;
+    int capacity;
     int size=0;
 //Конструктор, создающий пустой массив длины capacity
     public BasicArray(int capacity){
