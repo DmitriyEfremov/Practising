@@ -2,6 +2,7 @@ import java.util.Arrays;
 
 import Education_practice.Algorithms.*;
 import Education_practice.DataStructures.*;
+import Education_practice.DataStructures.BunaryTree.Tree;
 import JeffEriksonAlgorithms.LatticeMultiplying;
 
 public class Main {
@@ -17,10 +18,9 @@ public class Main {
 //        array.remove(5);
 //        System.out.println(array);
 
-        int[] data ={13,34,5,23,11,3,0,1453,13,12512,1,2,3,5,4,124};
-        System.out.println(Arrays.toString(data)+"\n");
-        MergeSort mergeSortTest = new MergeSort();
-        System.out.println(Arrays.toString(mergeSortTest.merge(data)));
+        int[] data ={34,5,2311,0,1453,12512,1,2,3,124};
+        ShellSort sort = new ShellSort(data);
+        System.out.println(Arrays.toString(sort.sort()));
 
         StackBasedWithArray stack = new StackBasedWithArray();
         stack.put('a');
@@ -59,5 +59,26 @@ public class Main {
 
         LatticeMultiplying multiplying = new LatticeMultiplying(12,34);
         System.out.println(multiplying.multiply());
+
+
+
+        Tree tree = new Tree();
+        tree.insert(50);
+        tree.insert(25);
+        tree.insert(30);
+        tree.insert(20);
+        tree.insert(70);
+        tree.insert(60);
+        tree.insert(90);
+        tree.insert(10);
+        tree.insert(100);
+        tree.symmetricalGoThrough(tree.getRoot());
+        System.out.println("---------------------");
+        tree.inorderGoThrough(tree.getRoot());
+        System.out.println("---------------------");
+        tree.reversedOrderGoThrough(tree.getRoot());
+
+
+
     }
 }

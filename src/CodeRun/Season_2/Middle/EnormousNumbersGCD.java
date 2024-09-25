@@ -10,7 +10,7 @@ public class EnormousNumbersGCD {
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
         HashMap<Integer, Integer> firstNumberOfDividers = new HashMap<>();
         HashMap<Integer, Integer> secondNumberOfDividers = new HashMap<>();
-        int firstNumberAmountOfMultipliers = Integer.parseInt(reader.readLine());
+        reader.readLine();
         String[] data = reader.readLine().split(" ");
         for (String multiplier : data) {
             int number = Integer.parseInt(multiplier);
@@ -25,7 +25,7 @@ public class EnormousNumbersGCD {
                 }
             }
         }
-        int secondNumberAmountOfMultipliers = Integer.parseInt(reader.readLine());
+        reader.readLine();
         data = reader.readLine().split(" ");
         for (String multiplier : data) {
             int number = Integer.parseInt(multiplier);
